@@ -1,0 +1,7 @@
+---
+users:
+  - username: jdheyburn
+    name: Joe
+    groups: ['wheel']
+    uid: 1001
+
