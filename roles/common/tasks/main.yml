@@ -1,10 +1,8 @@
 ---
-- name: install unattended-upgrades
+- name: install req packages
   become: yes
   apt:
-    pkg: unattended-upgrades
-    state: present
-    cache_valid_time: 3600 # Replace with a var?
+    name: "{{ debian_req_packages }}"
     update_cache: true
 
 - name: Disallow password authentication

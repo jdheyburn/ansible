@@ -5,3 +5,7 @@ users:
     groups: ['wheel']
     uid: 1001
 
+debian_req_packages:
+    - fail2ban
+    - unattended-upgrades
+    - neovim
