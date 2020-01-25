@@ -23,3 +23,7 @@
     state: present
   notify: Restart ssh
 
+- name: Deploy dotfiles
+  git:
+    repo: https://github.com/jdheyburn/dotfiles.git
+    dest: /home/jdheyburn/dotfiles

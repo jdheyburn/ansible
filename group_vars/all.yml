@@ -6,6 +6,7 @@ users:
     uid: 1001
 
 debian_req_packages:
-    - fail2ban
-    - unattended-upgrades
-    - neovim
+  - fail2ban
+  - unattended-upgrades
+  - neovim
+  - git
