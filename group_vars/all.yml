@@ -10,3 +10,5 @@ debian_req_packages:
   - unattended-upgrades
   - neovim
   - git
+  - htop
+  - duf

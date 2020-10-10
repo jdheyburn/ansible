@@ -1,3 +1,6 @@
 - hosts: all
   roles:
     - role: common
+    - role: geerlingguy.security
+    - role: jnv.unattended-upgrades
+      when: ansible_facts['os_family'] == 'Debian'
