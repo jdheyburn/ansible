@@ -1,0 +1,8 @@
+---
+- name: Set non-root port for admin panel
+  replace:
+    path: /etc/lighttpd/lighttpd.conf
+    regexp: '^server\.port .* = 80$'
+    replace: 'server.port                 = 8093'
+    backup: yes
+
